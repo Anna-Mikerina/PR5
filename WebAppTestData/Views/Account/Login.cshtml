@@ -1,0 +1,22 @@
+
+@{
+    ViewData["Title"] = "Авторизация";
+}
+
+<h1>Авторизация пользователя</h1>
+
+<form asp-action="Login">
+    <div>
+        <label>
+            Логин пользователя (почта):
+        </label>
+        <input class="form-control"/>
+    </div>
+    <div>
+        <label>
+            Пароль пользователя:
+        </label>
+        <input class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-outline-success sign_in" onclick="signIn" asp-controller="Home" asp-action="Index">Войти</button>
+</form>
